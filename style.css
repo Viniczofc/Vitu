@@ -1,0 +1,157 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Para a atividade opcional 2 - Posicionar formulário e lista */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+#form-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+#biblioteca-section {
+    flex: 2;
+    min-width: 300px;
+}
+
+/* Estilos do formulário */
+#form-livro {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+#form-livro input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#form-livro button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#form-livro button:hover {
+    background-color: #0056b3;
+}
+
+#form-livro button[type="button"] {
+    background-color: #6c757d;
+}
+
+#form-livro button[type="button"]:hover {
+    background-color: #545b62;
+}
+
+/* Estilos da biblioteca */
+#contador-itens {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#biblioteca {
+    display: flex;
+    flex-direction: column; /* Atividade opcional 2 - orientação vertical */
+    gap: 15px;
+}
+
+.item-biblioteca {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.item-biblioteca h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.item-biblioteca p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Estilos dos elementos de carregamento e erro */
+#carregamento {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 15px;
+    border: 1px solid #ffeaa7;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#erro {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Rodapé (Atividade opcional 4) */
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+    text-align: center;
+    color: #666;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
