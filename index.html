@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Elementos obrigatórios -->
+    <div id="carregamento" style="display: none;">
+        Carregando itens da biblioteca...
+    </div>
+    
+    <div id="erro" style="display: none;"></div>
+    
+    <!-- Container principal -->
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
+            <h1>Biblioteca Virtual</h1>
+        </header>
+        
+        <main>
+            <!-- Seção do formulário -->
+            <section id="form-section">
+                <h2>Adicionar Novo Item</h2>
+                <form id="form-livro">
+                    <input type="text" id="titulo" placeholder="Título" required>
+                    <input type="text" id="autor" placeholder="Autor" required>
+                    <input type="number" id="ano" placeholder="Ano de publicação">
+                    <button type="submit">Adicionar</button>
+                    <!-- Botão para preencher com exemplo (Atividade opcional 3) -->
+                    <button type="button" id="btn-exemplo">Preencher com exemplo</button>
+                </form>
+            </section>
+            
+            <!-- Seção da biblioteca -->
+            <section id="biblioteca-section">
+                <!-- Contador de itens (Atividade opcional 1) -->
+                <div id="contador-itens">
+                    <p>Total de itens: <span id="total">0</span></p>
+                </div>
+                
+                <!-- Lista de itens -->
+                <div id="biblioteca">
+                    <!-- Itens serão carregados aqui -->
+                </div>
+            </section>
+        </main>
+        
+        <!-- Rodapé (Atividade opcional 4) -->
+        <footer>
+            <p>Projeto desenvolvido por 
+                <a href="mailto:seuemail@exemplo.com">Seu Nome</a>
+            </p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
